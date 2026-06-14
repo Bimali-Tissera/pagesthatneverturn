@@ -1,2 +1,5 @@
-# Original WhatsApp media files (archived, not needed for site)
-Images/
+# Reference screenshots
+Indent-paragraphs.png
+biosection.png
+*.jpeg
+!assets/images/*.jpeg
