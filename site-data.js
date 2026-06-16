@@ -90,21 +90,14 @@ const siteData = {
       alt: "",
       caption: null
     },
-    {
-      id: "gallery-02",
-      type: "image",
-      src: "assets/images/img-35.jpeg",
-      alt: "",
-      caption: null
-    },
-
     // --- Introductory Text ---
     {
       id: "text-01",
       type: "text",
       heading: null,
       paragraphs: [
-        "[Exhibition introductory text to be provided]"
+        "\u201CNoperalena Pitu\u201D is a publication created to symbolize the Jaffna Public Library. In Sri Lanka, it is a symbolic reflection of the lost knowledge, destroyed cultural memory and social wounds left by the Sri Lankan ethnic crisis. The idea of \u201CNoperalena Pitu\u201D evokes the memory of history that cannot be read, the retrieval once it has been acquired and the irretrievable losses.",
+        "It is not a reworking of past wounds, but a symbolic expression to remember that actions that destroy knowledge, culture and human values must not be repeated."
       ]
     },
 
@@ -132,16 +125,6 @@ const siteData = {
       caption: null
     },
 
-    // --- Text: About the Installations ---
-    {
-      id: "text-02",
-      type: "text",
-      heading: null,
-      paragraphs: [
-        "[Text about the installation works to be provided]"
-      ]
-    },
-
     // --- Figurine Sculptures ---
     {
       id: "gallery-06",
@@ -152,30 +135,17 @@ const siteData = {
     },
     {
       id: "gallery-07",
-      type: "image-pair",
-      images: [
-        { src: "assets/images/img-27.jpeg", alt: "", caption: null },
-        { src: "assets/images/img-28.jpeg", alt: "", caption: null }
-      ]
+      type: "image",
+      src: "assets/images/img-28.jpeg",
+      alt: "",
+      caption: null
     },
     {
       id: "gallery-08",
-      type: "image-pair",
-      ratio: "40-60",
-      images: [
-        { src: "assets/images/img-37.jpeg", alt: "", caption: null },
-        { src: "assets/images/img-15.jpeg", alt: "", caption: null }
-      ]
-    },
-
-    // --- Text: About the Figurines ---
-    {
-      id: "text-03",
-      type: "text",
-      heading: null,
-      paragraphs: [
-        "[Text about the figurine sculptures to be provided]"
-      ]
+      type: "image",
+      src: "assets/images/img-15.jpeg",
+      alt: "",
+      caption: null
     },
 
     // --- Gallery / Paintings ---
@@ -187,23 +157,13 @@ const siteData = {
         { src: "assets/images/img-29.jpeg", alt: "", caption: null }
       ]
     },
-    // --- Text: About the Paintings ---
-    {
-      id: "text-04",
-      type: "text",
-      heading: null,
-      paragraphs: [
-        "[Text about the paintings / wall works to be provided]"
-      ]
-    },
-
     // --- Closing Text ---
     {
       id: "text-06",
       type: "text",
       heading: null,
       paragraphs: [
-        "[Closing statement / acknowledgements to be provided]"
+        "It is not a simple historical account of the war, but rather a critical artistic stance on memory, destruction, loss, and the rereading of history. However, since \u201Cwar is an act of serving the interests of the ruling class\u201D is a political and debatable interpretation."
       ]
     }
   ],
