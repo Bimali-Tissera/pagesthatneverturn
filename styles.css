@@ -194,6 +194,13 @@ a:hover {
   font-size: 0.92rem;
 }
 
+.bio__image {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  display: block;
+}
+
 .bio p {
   margin-bottom: 1rem;
   color: #222;
@@ -275,6 +282,50 @@ a:hover {
 
 .section--text p:last-child {
   margin-bottom: 0;
+}
+
+
+/* --- Contact --- */
+.section--contact {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  max-width: 920px;
+  margin: 0 auto 80px;
+  padding: 3rem 1rem;
+}
+
+.contact__image {
+  flex: 0 0 280px;
+}
+
+.contact__image img {
+  width: 100%;
+  display: block;
+}
+
+.contact__info {
+  flex: 1;
+  padding-top: 0.5rem;
+}
+
+.contact__item {
+  margin-bottom: 1.5rem;
+  color: #222;
+  font-size: 0.95rem;
+}
+
+.contact__label {
+  font-weight: 400;
+}
+
+.contact__item a {
+  color: #222;
+  text-decoration: underline;
+}
+
+.contact__item a:hover {
+  color: #555;
 }
 
 
@@ -373,6 +424,17 @@ a:hover {
 
   .section--image-pair {
     grid-template-columns: 1fr;
+  }
+
+  .section--contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact__image {
+    flex: 0 0 auto;
+    max-width: 250px;
   }
 
   #app {

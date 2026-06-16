@@ -71,6 +71,7 @@ const siteData = {
 
   // ── BIO / INTRO ───────────────────────────────────────────
   bio: {
+    image: "assets/images/img-02.jpeg",
     paragraphs: [
       "Kingsley Gunatillake is a visual artist working across painting, sculpture, installation, and book art. He has participated in numerous national and international art workshops, solo and group exhibitions.",
       "His recent works include solo exhibitions at the Freeze Art Fair in Seoul, Korea, and the New Delhi Art Fair. Additionally, his work was featured in a spotlight exhibition at Cinnamon life Hotel - City of Dreams.",
@@ -82,11 +83,11 @@ const siteData = {
 
   // ── SECTIONS (rendered top-to-bottom in this order) ───────
   sections: [
-    // --- Hero / Opening Images ---
+    // --- Hero / Opening Image ---
     {
-      id: "gallery-01",
+      id: "gallery-00",
       type: "image",
-      src: "assets/images/img-34.jpeg",
+      src: "assets/images/img-38.jpeg",
       alt: "",
       caption: null
     },
@@ -99,6 +100,13 @@ const siteData = {
         "\u201CNoperalena Pitu\u201D is a publication created to symbolize the Jaffna Public Library. In Sri Lanka, it is a symbolic reflection of the lost knowledge, destroyed cultural memory and social wounds left by the Sri Lankan ethnic crisis. The idea of \u201CNoperalena Pitu\u201D evokes the memory of history that cannot be read, the retrieval once it has been acquired and the irretrievable losses.",
         "It is not a reworking of past wounds, but a symbolic expression to remember that actions that destroy knowledge, culture and human values must not be repeated."
       ]
+    },
+    {
+      id: "gallery-01",
+      type: "image",
+      src: "assets/images/img-34.jpeg",
+      alt: "",
+      caption: null
     },
 
     // --- Installation Images ---
@@ -164,6 +172,19 @@ const siteData = {
       heading: null,
       paragraphs: [
         "It is not a simple historical account of the war, but rather a critical artistic stance on memory, destruction, loss, and the rereading of history. However, since \u201Cwar is an act of serving the interests of the ruling class\u201D is a political and debatable interpretation."
+      ]
+    },
+
+    // --- Contact ---
+    {
+      id: "contact",
+      type: "contact",
+      image: "assets/images/img-39.jpg",
+      details: [
+        { label: "Portfolio", value: "https://kingsleygunathillake.myportfolio.com/", url: "https://kingsleygunathillake.myportfolio.com/" },
+        { label: "Address", value: "27/2, 3rd lane, Gurudeniya Road, Ampitiya, Kandy, Sri Lanka" },
+        { label: "Web", value: "https://kandestudio.com/", url: "https://kandestudio.com/" },
+        { label: "Contact Number", value: "+94 77 736 6793", url: "tel:+94777366793" }
       ]
     }
   ],

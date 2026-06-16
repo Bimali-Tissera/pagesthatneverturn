@@ -64,8 +64,12 @@
 
   function renderBio(bio) {
     if (!bio || !bio.paragraphs || bio.paragraphs.length === 0) return null;
-    var children = bio.paragraphs.map(function (p) {
-      return el("p", null, p);
+    var children = [];
+    if (bio.image) {
+      children.push(el("img", { src: bio.image, alt: "", className: "bio__image", loading: "lazy" }));
+    }
+    bio.paragraphs.forEach(function (p) {
+      children.push(el("p", null, p));
     });
     return el("section", { className: "section section--text bio", id: "bio" }, children);
   }
@@ -147,12 +151,33 @@
     return el("section", { className: "section section--text", id: s.id }, children);
   }
 
+  function renderContact(s) {
+    var img = el("div", { className: "contact__image" }, [
+      el("img", { src: s.image, alt: "", loading: "lazy" })
+    ]);
+    var items = s.details.map(function (d) {
+      var val;
+      if (d.url) {
+        val = el("a", { href: d.url, target: "_blank", rel: "noopener" }, d.value);
+      } else {
+        val = document.createTextNode(d.value);
+      }
+      return el("p", { className: "contact__item" }, [
+        el("span", { className: "contact__label" }, d.label + " :  "),
+        val
+      ]);
+    });
+    var info = el("div", { className: "contact__info" }, items);
+    return el("section", { className: "section section--contact", id: s.id }, [img, info]);
+  }
+
   function renderSection(s) {
     switch (s.type) {
       case "image":      return renderImage(s);
       case "image-pair": return renderImagePair(s);
       case "video":      return renderVideo(s);
       case "text":       return renderText(s);
+      case "contact":    return renderContact(s);
       default:           return null;
     }
   }
