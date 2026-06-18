@@ -175,6 +175,26 @@ const siteData = {
       ]
     },
 
+    // --- Articles ---
+    {
+      id: "articles",
+      type: "articles",
+      heading: "Articles",
+      items: [
+        {
+          title: "Newspaper Article - Dedunna",
+          thumbnail: "assets/images/img-05.jpeg",
+          url: "article.html"
+        },
+        {
+          title: "Thoughts on Noperalena Pitu - Artra",
+          thumbnail: "assets/images/Artra_logo.png",
+          url: "https://www.artra.lk/thoughts-on-noperalena-pitu-by-kingsley-gunatillake/",
+          external: true
+        }
+      ]
+    },
+
     // --- Contact ---
     {
       id: "contact",
@@ -191,8 +211,8 @@ const siteData = {
 
   // ── FOOTER ────────────────────────────────────────────────
   footer: {
-    galleryName: "[Gallery Name]",
-    address: "[Gallery address to be provided]",
+    galleryName: null,
+    address: null,
     website: null,
     email: null,
     phone: null,

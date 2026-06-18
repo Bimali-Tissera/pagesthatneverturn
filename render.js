@@ -171,12 +171,37 @@
     return el("section", { className: "section section--contact", id: s.id }, [img, info]);
   }
 
+  function renderArticles(s) {
+    var children = [];
+    if (s.heading) {
+      children.push(el("h3", { className: "section-heading" }, s.heading));
+    }
+    if (s.items) {
+      var list = s.items.map(function (item) {
+        var attrs = { href: item.url, className: "article-card" };
+        if (item.external) {
+          attrs.target = "_blank";
+          attrs.rel = "noopener";
+        }
+        var cardChildren = [];
+        if (item.thumbnail) {
+          cardChildren.push(el("img", { src: item.thumbnail, alt: item.title || "", loading: "lazy" }));
+        }
+        cardChildren.push(el("span", { className: "article-card__title" }, item.title || ""));
+        return el("a", attrs, cardChildren);
+      });
+      children.push(el("div", { className: "articles__list" }, list));
+    }
+    return el("section", { className: "section section--articles", id: s.id }, children);
+  }
+
   function renderSection(s) {
     switch (s.type) {
       case "image":      return renderImage(s);
       case "image-pair": return renderImagePair(s);
       case "video":      return renderVideo(s);
       case "text":       return renderText(s);
+      case "articles":   return renderArticles(s);
       case "contact":    return renderContact(s);
       default:           return null;
     }
@@ -262,8 +287,86 @@
     app.appendChild(fragment);
   }
 
+  // ── Lightbox ──────────────────────────────────────────
+
+  function initLightbox() {
+    // Collect all gallery images on the page
+    var allImages = [];
+    var imgs = document.querySelectorAll(
+      ".section--image img, .section--image-pair img"
+    );
+    imgs.forEach(function (img) {
+      allImages.push(img.getAttribute("src"));
+    });
+
+    var currentIndex = 0;
+
+    // Build lightbox DOM
+    var overlay = el("div", { className: "lightbox" });
+    var closeBtn = el("button", { className: "lightbox__close" });
+    closeBtn.innerHTML = "&times;";
+    var prevBtn = el("button", { className: "lightbox__arrow lightbox__arrow--prev" });
+    prevBtn.innerHTML = "&#8249;";
+    var nextBtn = el("button", { className: "lightbox__arrow lightbox__arrow--next" });
+    nextBtn.innerHTML = "&#8250;";
+    var imgEl = el("img", { className: "lightbox__img" });
+    var counter = el("span", { className: "lightbox__counter" });
+
+    overlay.appendChild(closeBtn);
+    overlay.appendChild(prevBtn);
+    overlay.appendChild(imgEl);
+    overlay.appendChild(nextBtn);
+    overlay.appendChild(counter);
+    document.body.appendChild(overlay);
+
+    function show(index) {
+      currentIndex = index;
+      imgEl.setAttribute("src", allImages[currentIndex]);
+      counter.textContent = (currentIndex + 1) + " / " + allImages.length;
+      overlay.classList.add("lightbox--open");
+      document.body.style.overflow = "hidden";
+    }
+
+    function hide() {
+      overlay.classList.remove("lightbox--open");
+      document.body.style.overflow = "";
+    }
+
+    function prev() {
+      show(currentIndex <= 0 ? allImages.length - 1 : currentIndex - 1);
+    }
+
+    function next() {
+      show(currentIndex >= allImages.length - 1 ? 0 : currentIndex + 1);
+    }
+
+    // Click handlers on gallery images
+    imgs.forEach(function (img, i) {
+      img.style.cursor = "pointer";
+      img.addEventListener("click", function () {
+        show(i);
+      });
+    });
+
+    closeBtn.addEventListener("click", hide);
+    prevBtn.addEventListener("click", function (e) { e.stopPropagation(); prev(); });
+    nextBtn.addEventListener("click", function (e) { e.stopPropagation(); next(); });
+    overlay.addEventListener("click", function (e) {
+      if (e.target === overlay) hide();
+    });
+
+    // Keyboard navigation
+    document.addEventListener("keydown", function (e) {
+      if (!overlay.classList.contains("lightbox--open")) return;
+      if (e.key === "Escape") hide();
+      if (e.key === "ArrowLeft") prev();
+      if (e.key === "ArrowRight") next();
+    });
+  }
+
   // ── Go ─────────────────────────────────────────────────
 
   render(siteData);
+  initLightbox();
 
 })();
