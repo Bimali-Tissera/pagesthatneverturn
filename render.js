@@ -168,7 +168,8 @@
       ]);
     });
     var info = el("div", { className: "contact__info" }, items);
-    return el("section", { className: "section section--contact", id: s.id }, [img, info]);
+    var heading = el("h3", { className: "section-heading contact__heading" }, "Contact");
+    return el("section", { className: "section section--contact", id: s.id }, [heading, img, info]);
   }
 
   function renderArticles(s) {

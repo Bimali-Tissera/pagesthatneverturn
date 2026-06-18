@@ -302,9 +302,17 @@ h1, h2, h3 {
 
 
 /* --- Contact --- */
+.contact__heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
 .section--contact {
   display: flex;
-  gap: 12rem;
+  flex-wrap: wrap;
+  column-gap: 12rem;
+  row-gap: 3rem;
   align-items: center;
   justify-content: center;
   max-width: 1000px;
