@@ -251,6 +251,8 @@
       el("a", { href: "#top", className: "back-to-top" }, "Back to Top")
     );
 
+    children.push(el("p", { className: "footer-credit" }, "Site by Bimali Tissera"));
+
     return el("footer", { className: "site-footer" }, children);
   }
 

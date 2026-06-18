@@ -609,6 +609,13 @@ h1, h2, h3 {
   color: #222;
 }
 
+.footer-credit {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: #aaa;
+  letter-spacing: 0.06em;
+}
+
 
 /* ── Responsive ────────────────────────────────────────── */
 
