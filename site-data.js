@@ -165,6 +165,20 @@ const siteData = {
         { src: "assets/images/img-29.jpeg", alt: "", caption: null }
       ]
     },
+    {
+      id: "gallery-10",
+      type: "image",
+      src: "assets/images/img-09.jpeg",
+      alt: "",
+      caption: null
+    },
+    {
+      id: "gallery-11",
+      type: "image",
+      src: "assets/images/img-07.jpeg",
+      alt: "",
+      caption: null
+    },
     // --- Closing Text ---
     {
       id: "text-06",

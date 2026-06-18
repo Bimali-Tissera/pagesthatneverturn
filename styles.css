@@ -228,6 +228,12 @@ h1, h2, h3 {
   margin-right: auto;
 }
 
+#gallery-10 {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section--image img {
   width: 100%;
   height: auto;
