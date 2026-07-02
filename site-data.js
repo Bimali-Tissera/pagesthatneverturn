@@ -58,7 +58,7 @@ const siteData = {
 
   // ── MASTHEAD ─────────────────────────────────────────────
   masthead: {
-    backgroundImage: "assets/images/img-11.jpeg",
+    backgroundImage: "assets/images/img-01.JPG",
     artistName: "Kingsley Gunatillake",
     exhibitionTitle: "Pages That Never Turn"
   },
@@ -71,122 +71,94 @@ const siteData = {
 
   // ── BIO / INTRO ───────────────────────────────────────────
   bio: {
-    image: "assets/images/img-02.jpeg",
+    image: null,
+    artistNameSinhala: "\u0DB1\u0DDD\u0DB4\u0DD9\u0DBB\u0DBD\u0DD9\u0DB1 \u0DB4\u0DD2\u0DA7\u0DD4 / NOPERALENA PITU",
+    artistByline: "By Kingsley Gunatillake",
     paragraphs: [
-      "Kingsley Gunatillake is a visual artist working across painting, sculpture, installation, and book art. He has participated in numerous national and international art workshops, solo and group exhibitions.",
-      "His recent works include solo exhibitions at the Freeze Art Fair in Seoul, Korea, and the New Delhi Art Fair. Additionally, his work was featured in a spotlight exhibition at Cinnamon life Hotel - City of Dreams.",
-      "Kingsley\u2019s art has been exhibited extensively in Sri Lanka and abroad, with his works included in national and international art collections, including the Sri Lanka Presidential Art Collection. He is also a recipient of prestigious awards such as the BIB, NOMA, and Bhunka Awards.",
-      "Dedicated to contemporary art, Kingsley continues to explore and innovate through his creative practice.",
-      "\u30AD\u30F3\u30B9\u30EA\u30FB\u30B0\u30CA\u30C6\u30A3\u30E9\u30AB\u306F\u3001\u7D75\u753B\u3001\u5F6B\u523B\u3001\u30A4\u30F3\u30B9\u30BF\u30EC\u30FC\u30B7\u30E7\u30F3\u3001\u305D\u3057\u3066\u30D6\u30C3\u30AF\u30A2\u30FC\u30C8 \u3092\u624B\u304C\u3051\u308B\u30D3\u30B8\u30E5\u30A2\u30EB\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u3067\u3059\u3002\u5F7C\u306F\u3001\u6570\u591A\u304F\u306E\u56FD\u5185\u5916\u306E\u30A2\u30FC\u30C8\u30EF\u30FC\u30AF\u30B7\u30E7 \u30C3\u30D7\u306B\u53C2\u52A0\u3057\u3001\u500B\u5C55\u3084\u30B0\u30EB\u30FC\u30D7\u5C55\u3092\u958B\u50AC\u3057\u3066\u304D\u307E\u3057\u305F\u3002\u6700\u8FD1\u306E\u4F5C\u54C1\u306B\u306F\u3001\u97D3\u56FD\u30BD\u30A6\u30EB \u306E\u30D5\u30EA\u30FC\u30BA\u30A2\u30FC\u30C8\u30D5\u30A7\u30A2\u3084\u30CB\u30E5\u30FC\u30C7\u30EA\u30FC\u30A2\u30FC\u30C8\u30D5\u30A7\u30A2\u3067\u306E\u500B\u5C55\u306A\u3069\u304C\u3042\u308A\u307E\u3059\u3002\u307E \u305F\u3001\u5F7C\u306E\u4F5C\u54C1\u306F\u30B7\u30CA\u30E2\u30F3\u30E9\u30A4\u30D5\u306E\u30DB\u30C6\u30EB\u3001City of Dreams \u3067\u306E\u30B9\u30DD\u30C3\u30C8\u30E9\u30A4\u30C8\u5C55\u306B\u3082 \u5C55\u793A\u3055\u308C\u307E\u3057\u305F\u3002 \u30AD\u30F3\u30B9\u30EA\u306E\u30A2\u30FC\u30C8\u306F\u30B9\u30EA\u30E9\u30F3\u30AB\u56FD\u5185\u5916\u3067\u5E83\u304F\u5C55\u793A\u3055\u308C\u3066\u304A\u308A\u3001\u30B9\u30EA \u30E9\u30F3\u30AB\u5927\u7D71\u9818\u30A2\u30FC\u30C8\u30B3\u30EC\u30AF\u30B7\u30E7\u30F3\u3092\u306F\u3058\u3081\u3001\u56FD\u5185\u5916\u306E\u30A2\u30FC\u30C8\u30B3\u30EC\u30AF\u30B7\u30E7\u30F3\u306B\u3082\u6240\u8535\u3055 \u308C\u3066\u3044\u307E\u3059\u3002\u5F7C\u306F\u3001BIB \u8CDE\u3001NOMA \u8CDE\u3001\u65E5\u672C\u306E\u6587\u5316\u8CDE\u306A\u3069\u306E\u540D\u8A89\u3042\u308B\u8CDE\u3092\u53D7\u8CDE\u3057\u3066\u3044\u307E\u3059\u3002\u73FE\u4EE3\u30A2\u30FC\u30C8\u306B\u6367\u3052\u3089\u308C\u305F\u30AD\u30F3\u30B9\u30EA\u306F\u3001\u5F7C\u306E\u5275\u9020\u7684\u306A\u5B9F\u8DF5\u3092\u901A\u3058\u3066\u63A2\u6C42\u3068\u9769\u65B0\u3092 \u7D9A\u3051\u3066\u3044\u307E\u3059\u3002"
+      "In \u0DB1\u0DDD\u0DB4\u0DD9\u0DBB\u0DBD\u0DD9\u0DB1 \u0DB4\u0DD2\u0DA7\u0DD4 Noperalena Pitu (Pages that Never Turn), Kingsley Gunatillake\u2019s longstanding practice of book art finds renewed resonance. Once repositories of knowledge, found volumes are made into terrains of conflict, their burned and blistered surfaces form uneasy topographies \u2013 ridges, trenches and fault lines across which bodies are littered and miniature rifles are trained. The pages no longer turn in this unsettling theatre; where conflict is eerily gamified. Gunatillake\u2019s abstract paintings extend this meditation to a further register. The surface of the paper remains raw and unresolved as the artist exploits the inherent fluidity of acrylic to craft textured ribbons of color with sweeping motions.",
+      "In totality, Gunatillake\u2019s installations, paintings and sculptural interventions form an uneasy archive of a nation\u2019s intertwined histories of brutality and beauty. However the questions raised extend well beyond Sri Lanka, in a moment where our hold on collective memory is increasingly threatened, Gunatillake asks what it means to remember and persist."
     ]
   },
 
   // ── SECTIONS (rendered top-to-bottom in this order) ───────
   sections: [
-    // --- Hero / Opening Image ---
+
+    // ── Section 1: "Noperela Pitu - Installation" (PDF page 2) ──
     {
-      id: "gallery-00",
-      type: "image",
-      src: "assets/images/img-38.jpeg",
-      alt: "",
-      caption: null
-    },
-    // --- Introductory Text ---
-    {
-      id: "text-01",
+      id: "installation-heading",
       type: "text",
-      heading: null,
+      heading: "Noperela Pitu - Installation",
       paragraphs: [
-        "\u201CNoperalena Pitu\u201D is a publication created to symbolize the Jaffna Public Library. In Sri Lanka, it is a symbolic reflection of the lost knowledge, destroyed cultural memory and social wounds left by the Sri Lankan ethnic crisis. The idea of \u201CNoperalena Pitu\u201D evokes the memory of history that cannot be read, the retrieval once it has been acquired and the irretrievable losses.",
-        "It is not a reworking of past wounds, but a symbolic expression to remember that actions that destroy knowledge, culture and human values must not be repeated."
+        "[PLACEHOLDER — Installation description text]"
       ]
     },
+    // Large full-width image (PDF page 2 — book with figurines, main shot)
     {
-      id: "gallery-01",
+      id: "installation-img-01",
       type: "image",
-      src: "assets/images/img-34.jpeg",
+      src: "assets/images/img-02.jpg",
       alt: "",
       caption: null
     },
-
-    // --- Installation Images ---
+    // Two side-by-side images (PDF page 2 — bottom pair)
     {
-      id: "gallery-03",
+      id: "installation-pair-01",
       type: "image-pair",
       images: [
-        { src: "assets/images/img-30.jpeg", alt: "", caption: null },
-        { src: "assets/images/img-36.jpeg", alt: "", caption: null }
+        { src: "assets/images/img-06.JPG", alt: "", caption: null },
+        { src: "assets/images/img-07.JPG", alt: "", caption: null }
       ]
     },
+
+    // ── Section 2: Two stacked full-width images (PDF page 3) ──
     {
-      id: "gallery-04",
+      id: "detail-img-01",
       type: "image",
-      src: "assets/images/img-26.jpeg",
+      src: "assets/images/img-12.JPG",
       alt: "",
       caption: null
     },
     {
-      id: "gallery-05",
+      id: "detail-img-02",
       type: "image",
-      src: "assets/images/img-18.jpeg",
+      src: "assets/images/img-11.JPG",
       alt: "",
       caption: null
     },
 
-    // --- Figurine Sculptures ---
+    // ── Section 3: 2×2 grid of images (PDF page 4 — top) ──
     {
-      id: "gallery-06",
-      type: "image",
-      src: "assets/images/img-25.jpeg",
-      alt: "",
-      caption: null
-    },
-    {
-      id: "gallery-07",
-      type: "image",
-      src: "assets/images/img-28.jpeg",
-      alt: "",
-      caption: null
-    },
-    {
-      id: "gallery-08",
-      type: "image",
-      src: "assets/images/img-15.jpeg",
-      alt: "",
-      caption: null
-    },
-
-    // --- Gallery / Paintings ---
-    {
-      id: "gallery-09",
+      id: "grid-pair-01",
       type: "image-pair",
       images: [
-        { src: "assets/images/img-23.jpeg", alt: "", caption: null },
-        { src: "assets/images/img-29.jpeg", alt: "", caption: null }
+        { src: "assets/images/img-13.JPG", alt: "", caption: null },
+        { src: "assets/images/img-14.JPG", alt: "", caption: null }
       ]
     },
     {
-      id: "gallery-10",
-      type: "image",
-      src: "assets/images/img-09.jpeg",
-      alt: "",
-      caption: null
-    },
-    {
-      id: "gallery-11",
-      type: "image",
-      src: "assets/images/img-07.jpeg",
-      alt: "",
-      caption: null
-    },
-    // --- Closing Text ---
-    {
-      id: "text-06",
-      type: "text",
-      heading: null,
-      paragraphs: [
-        "It is not a simple historical account of the war, but rather a critical artistic stance on memory, destruction, loss, and the rereading of history. However, since \u201Cwar is an act of serving the interests of the ruling class\u201D is a political and debatable interpretation."
+      id: "grid-pair-02",
+      type: "image-pair",
+      images: [
+        { src: "assets/images/img-17.JPG", alt: "", caption: null },
+        { src: "assets/images/img-15.JPG", alt: "", caption: null }
       ]
+    },
+    // Large full-width image below grid (PDF page 4 — bottom)
+    {
+      id: "gallery-wide-01",
+      type: "image",
+      src: "assets/images/img-19.JPG",
+      alt: "",
+      caption: null
+    },
+
+    // ── Section 4: Full-width image (PDF page 5) ──
+    {
+      id: "gallery-wide-02",
+      type: "image",
+      src: "assets/images/img-20.JPG",
+      alt: "",
+      caption: null
     },
 
     // --- Articles ---
@@ -213,7 +185,7 @@ const siteData = {
     {
       id: "contact",
       type: "contact",
-      image: "assets/images/img-39.jpg",
+      image: "assets/images/img-27.jpg",
       details: [
         { label: "Portfolio", value: "https://kingsleygunathillake.myportfolio.com/", url: "https://kingsleygunathillake.myportfolio.com/" },
         { label: "Address", value: "27/2, 3rd lane, Gurudeniya Road, Ampitiya, Kandy, Sri Lanka" },

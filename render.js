@@ -68,6 +68,12 @@
     if (bio.image) {
       children.push(el("img", { src: bio.image, alt: "", className: "bio__image", loading: "lazy" }));
     }
+    if (bio.artistNameSinhala) {
+      children.push(el("p", { className: "bio__sinhala-name" }, bio.artistNameSinhala));
+    }
+    if (bio.artistByline) {
+      children.push(el("p", { className: "bio__byline" }, bio.artistByline));
+    }
     bio.paragraphs.forEach(function (p) {
       children.push(el("p", null, p));
     });
@@ -269,8 +275,7 @@
       fragment.appendChild(renderMasthead(data.masthead));
     }
 
-    // Header
-    fragment.appendChild(renderHeader(data.header));
+    // Header (removed — artist name shown in bio section instead)
 
     // Bio
     var bio = renderBio(data.bio);
