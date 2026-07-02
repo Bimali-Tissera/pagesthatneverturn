@@ -161,6 +161,110 @@ const siteData = {
       caption: null
     },
 
+    // ── Installation Section A (layout2 pages 1–2) ──────────
+    {
+      id: "install-a-heading",
+      type: "text",
+      heading: "Noperela Pitu - Installation",
+      paragraphs: [
+        "[INSTALL_A_TEXT_1]",
+        "[INSTALL_A_TEXT_2]"
+      ]
+    },
+    // Full-width image — woman looking up at suspended installation with light
+    {
+      id: "install-a-img-01",
+      type: "image",
+      src: "assets/images/img-26.jpeg",
+      alt: "",
+      caption: null
+    },
+    // Full-width image — people viewing installation in gallery
+    {
+      id: "install-a-img-02",
+      type: "image",
+      src: "assets/images/img-30.JPG",
+      alt: "",
+      caption: null
+    },
+    // Full-width image — close-up books with dried flowers
+    {
+      id: "install-a-img-03",
+      type: "image",
+      src: "assets/images/img-25.JPG",
+      alt: "",
+      caption: null
+    },
+
+    // ── Installation Section B (layout2 pages 3–4) ──────────
+    {
+      id: "install-b-heading",
+      type: "text",
+      heading: "Noperela Pitu - Installation",
+      paragraphs: [
+        "[INSTALL_B_TEXT_1]"
+      ]
+    },
+    // Full-width image — corridor with wall-mounted desks
+    {
+      id: "install-b-img-01",
+      type: "image",
+      src: "assets/images/img-28.JPG",
+      alt: "",
+      caption: null
+    },
+    {
+      id: "install-b-text-02",
+      type: "text",
+      heading: null,
+      paragraphs: [
+        "[INSTALL_B_TEXT_2]"
+      ]
+    },
+    // Two side-by-side images — shelf/table pieces
+    {
+      id: "install-b-pair-01",
+      type: "image-pair",
+      images: [
+        { src: "assets/images/img-22.JPG", alt: "", caption: null },
+        { src: "assets/images/img-24.JPG", alt: "", caption: null }
+      ]
+    },
+    {
+      id: "install-b-text-03",
+      type: "text",
+      heading: null,
+      paragraphs: [
+        "[INSTALL_B_TEXT_3]"
+      ]
+    },
+    // Full-width image — book in drawer close-up
+    {
+      id: "install-b-img-03",
+      type: "image",
+      src: "assets/images/img-21.JPG",
+      alt: "",
+      caption: null
+    },
+
+    // ── Installation Section C (layout2 page 5) ─────────────
+    // Full-width image — book in drawer top-down with blue stone
+    {
+      id: "install-c-img-01",
+      type: "image",
+      src: "assets/images/img-29.JPG",
+      alt: "",
+      caption: null
+    },
+    {
+      id: "install-c-heading",
+      type: "text",
+      heading: "Noperela Pitu - Installation",
+      paragraphs: [
+        "[INSTALL_C_TEXT_1]"
+      ]
+    },
+
     // --- Articles ---
     {
       id: "articles",
