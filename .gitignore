@@ -3,3 +3,18 @@ Indent-paragraphs.png
 biosection.png
 *.jpeg
 !assets/images/*.jpeg
+
+# Large files
+_RDP*.JPG
+4M7A0218-Recovered.jpg
+*.pdf
+*.exe
+*.winmd
+contact.png
+Concept.txt
+Ending.txt
+.claude/
+
+# Allow assets
+!assets/**/*.pdf
+!assets/images/**

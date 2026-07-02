@@ -72,10 +72,10 @@ const siteData = {
   // ── BIO / INTRO ───────────────────────────────────────────
   bio: {
     image: null,
-    artistNameSinhala: "\u0DB1\u0DDD\u0DB4\u0DD9\u0DBB\u0DBD\u0DD9\u0DB1 \u0DB4\u0DD2\u0DA7\u0DD4 / NOPERALENA PITU",
+    artistNameSinhala: "නොපෙරලෙන පිටු / NOPERALENA PITU",
     artistByline: "By Kingsley Gunatillake",
     paragraphs: [
-      "In \u0DB1\u0DDD\u0DB4\u0DD9\u0DBB\u0DBD\u0DD9\u0DB1 \u0DB4\u0DD2\u0DA7\u0DD4 Noperalena Pitu (Pages that Never Turn), Kingsley Gunatillake\u2019s longstanding practice of book art finds renewed resonance. Once repositories of knowledge, found volumes are made into terrains of conflict, their burned and blistered surfaces form uneasy topographies \u2013 ridges, trenches and fault lines across which bodies are littered and miniature rifles are trained. The pages no longer turn in this unsettling theatre; where conflict is eerily gamified. Gunatillake\u2019s abstract paintings extend this meditation to a further register. The surface of the paper remains raw and unresolved as the artist exploits the inherent fluidity of acrylic to craft textured ribbons of color with sweeping motions.",
+      "In නොපෙරලෙන පිටු / Noperalena Pitu (Pages that Never Turn), Kingsley Gunatillake\u2019s longstanding practice of book art finds renewed resonance. Once repositories of knowledge, found volumes are made into terrains of conflict, their burned and blistered surfaces form uneasy topographies \u2013 ridges, trenches and fault lines across which bodies are littered and miniature rifles are trained. The pages no longer turn in this unsettling theatre; where conflict is eerily gamified. Gunatillake\u2019s abstract paintings extend this meditation to a further register. The surface of the paper remains raw and unresolved as the artist exploits the inherent fluidity of acrylic to craft textured ribbons of color with sweeping motions.",
       "In totality, Gunatillake\u2019s installations, paintings and sculptural interventions form an uneasy archive of a nation\u2019s intertwined histories of brutality and beauty. However the questions raised extend well beyond Sri Lanka, in a moment where our hold on collective memory is increasingly threatened, Gunatillake asks what it means to remember and persist."
     ]
   },
