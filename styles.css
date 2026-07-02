@@ -504,7 +504,7 @@ h1, h2, h3 {
   background: none;
   border: none;
   font-size: 3.5rem;
-  color: #222;
+  color: #B37E2E;
   cursor: pointer;
   padding: 0.5rem 1rem;
   line-height: 1;
@@ -513,7 +513,7 @@ h1, h2, h3 {
 }
 
 .lightbox__arrow:hover {
-  color: #555;
+  color: #d4a04a;
 }
 
 .lightbox__arrow--prev {
